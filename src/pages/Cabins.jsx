@@ -1,12 +1,20 @@
 // src/pages/Cabins.jsx
-import React from "react";
+
+import { useEffect } from "react";
+import Heading from "../ui/Heading";
+import Row from "../ui/Row";
+import { getCabins } from "../services/apiCabins";
 
 function Cabins() {
+    useEffect(function () {
+        getCabins().then((data) => console.log(data));
+    }, []);
+
     return (
-        <div>
-            <h1>All Cabins</h1>
+        <Row type="horizontal">
+            <Heading as="h1">All Cabins</Heading>
             <p>TEST</p>
-        </div>
+        </Row>
     );
 }
 

@@ -6,7 +6,7 @@ import {
   HiEye,
   HiTrash,
 } from "react-icons/hi2";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import Tag from "../../ui/Tag";
 import Table from "../../ui/Table";

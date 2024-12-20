@@ -12,7 +12,6 @@ import { useBooking } from "../bookings/useBooking";
 import Spinner from "../../ui/Spinner";
 import { useEffect, useState } from "react";
 import Checkbox from "../../ui/Checkbox";
-import { format, set } from "date-fns";
 import { formatCurrency } from "../../utils/helpers";
 import { useChecking } from "./useCheckin";
 import { useSettings } from "../settings/useSettings";

@@ -1,11 +1,10 @@
-import { createContext, useContext, useState } from "react"; // Added missing useState
+import { createContext, useContext, useState } from "react";
 import { createPortal } from "react-dom";
 import { HiEllipsisVertical } from "react-icons/hi2";
 import styled from "styled-components";
 import { useOutsideClick } from "../hooks/useOutsideClick";
 
-// Styled Components
-const StyledMenu = styled.div`
+const Menu = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -32,9 +31,11 @@ const StyledToggle = styled.button`
 
 const StyledList = styled.ul`
   position: fixed;
+
   background-color: var(--color-grey-0);
   box-shadow: var(--shadow-md);
   border-radius: var(--border-radius-md);
+
   right: ${(props) => props.position.x}px;
   top: ${(props) => props.position.y}px;
 `;
@@ -64,16 +65,14 @@ const StyledButton = styled.button`
   }
 `;
 
-// Context
 const MenusContext = createContext();
 
-// Menus Component
 function Menus({ children }) {
   const [openId, setOpenId] = useState("");
   const [position, setPosition] = useState(null);
 
   const close = () => setOpenId("");
-  const open = (id) => setOpenId(id);
+  const open = setOpenId;
 
   return (
     <MenusContext.Provider
@@ -84,7 +83,6 @@ function Menus({ children }) {
   );
 }
 
-// Toggle Component
 function Toggle({ id }) {
   const { openId, close, open, setPosition } = useContext(MenusContext);
 
@@ -96,6 +94,7 @@ function Toggle({ id }) {
       x: window.innerWidth - rect.width - rect.x,
       y: rect.y + rect.height + 8,
     });
+
     openId === "" || openId !== id ? open(id) : close();
   }
 
@@ -106,7 +105,6 @@ function Toggle({ id }) {
   );
 }
 
-// List Component
 function List({ id, children }) {
   const { openId, position, close } = useContext(MenusContext);
   const ref = useOutsideClick(close, false);
@@ -121,7 +119,6 @@ function List({ id, children }) {
   );
 }
 
-// Button Component
 function Button({ children, icon, onClick }) {
   const { close } = useContext(MenusContext);
 
@@ -140,8 +137,7 @@ function Button({ children, icon, onClick }) {
   );
 }
 
-// Attach subcomponents to Menus
-Menus.Menu = StyledMenu;
+Menus.Menu = Menu;
 Menus.Toggle = Toggle;
 Menus.List = List;
 Menus.Button = Button;

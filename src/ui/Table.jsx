@@ -73,7 +73,7 @@ function Table({ columns, children }) {
 function Header({ children }) {
   const { columns } = useContext(TableContext);
   return (
-    <StyledHeader role="row" columns={columns}>
+    <StyledHeader role="row" columns={columns} as="header">
       {children}
     </StyledHeader>
   );
@@ -81,7 +81,7 @@ function Header({ children }) {
 function Row({ children }) {
   const { columns } = useContext(TableContext);
   return (
-    <StyledRow role="row" columns={columns} as="header">
+    <StyledRow role="row" columns={columns}>
       {children}
     </StyledRow>
   );
@@ -97,4 +97,5 @@ Table.Header = Header;
 Table.Body = Body;
 Table.Row = Row;
 Table.Footer = Footer;
+
 export default Table;

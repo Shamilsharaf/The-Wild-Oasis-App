@@ -6,6 +6,5 @@ const ButtonGroup = styled.div`
   justify-content: flex-end;
 `;
 
-export default ButtonGroup;
 
-// Test 2
+export default ButtonGroup;

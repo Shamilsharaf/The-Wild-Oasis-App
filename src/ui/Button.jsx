@@ -62,6 +62,10 @@ Button.defaultProps = {
   size: "medium",
 };
 
+<<<<<<< HEAD
 
 export default Button;
 
+=======
+export default Button;
+>>>>>>> Final-a6d1522

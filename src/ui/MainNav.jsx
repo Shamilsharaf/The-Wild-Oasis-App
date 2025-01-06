@@ -48,11 +48,16 @@ const StyledNavLink = styled(NavLink)`
   }
 `;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> Final-a6d1522
 function MainNav() {
   return (
     <nav>
       <NavList>
         <li>
+<<<<<<< HEAD
           <StyledNavLink to="/dashboard">
             <HiOutlineHome />
             <span>Home</span>
@@ -62,35 +67,79 @@ function MainNav() {
           <StyledNavLink to="/bookings">
             <HiOutlineCalendarDays />
             <span>Bookings</span>
+=======
+          <StyledNavLink to='/dashboard'>
+            <HiOutlineHome />
+            <span>
+              Home
+            </span>
           </StyledNavLink>
         </li>
 
         <li>
+          <StyledNavLink to='/bookings'>
+            <HiOutlineCalendarDays />
+            <span>
+              Bookings
+            </span>
+>>>>>>> Final-a6d1522
+          </StyledNavLink>
+        </li>
+
+        <li>
+<<<<<<< HEAD
           <StyledNavLink to="/cabin">
             <HiOutlineHomeModern />
             <span>Cabins</span>
+=======
+          <StyledNavLink to='/cabins'>
+            <HiOutlineHomeModern />
+            <span>
+              Cabins
+            </span>
+>>>>>>> Final-a6d1522
           </StyledNavLink>
         </li>
 
         <li>
+<<<<<<< HEAD
           <StyledNavLink to="/users">
             <HiOutlineUsers />
             <span>Users</span>
+=======
+          <StyledNavLink to='/users'>
+            <HiOutlineUsers />
+            <span>
+              Users
+            </span>
+>>>>>>> Final-a6d1522
           </StyledNavLink>
         </li>
 
         <li>
+<<<<<<< HEAD
           <StyledNavLink to="/settings">
             <HiOutlineCog6Tooth />
             <span>Settings</span>
+=======
+          <StyledNavLink to='/settings'>
+            <HiOutlineCog6Tooth />
+            <span>
+              Settings
+            </span>
+>>>>>>> Final-a6d1522
           </StyledNavLink>
         </li>
 
       </NavList>
     </nav>
+<<<<<<< HEAD
   );
 
 
+=======
+  )
+>>>>>>> Final-a6d1522
 }
 
 export default MainNav

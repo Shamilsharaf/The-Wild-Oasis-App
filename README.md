@@ -16,37 +16,34 @@ You can access our application using the following demo account:
 -   **Password** : `user1@123`
 
 ## Key Features 📝
-Authentication & User Management
+- Authentication & User Management
 
-Only hotel employees can log in and manage bookings.
-New users can sign up only within the app.
-Users can upload avatars, update names, and change passwords.
-Cabin Management
+    - Only hotel employees can log in and manage bookings.New users can signup only within the app.Users can upload avatars, update names, and change passwords.
 
-View all cabins with details like photo, capacity, price, and discounts.
-Add, edit, or delete cabins, including photo uploads.
-Bookings
+- Cabin Management
 
-View all bookings with guest details, dates, status, and payment info.
-Booking statuses: Unconfirmed, Checked-in, or Checked-out.
-Filter bookings by status.
-Check-In/Out
+    - View all cabins with details like photo, capacity, price, and discounts.Add, edit, or delete cabins, including photo uploads.
+    
+- Bookings
 
-Check-in, check-out, or delete bookings as guests arrive.
-Confirm payments on check-in.
-Option to add breakfast for the stay.
-Guests
+    - View all bookings with guest details, dates, status, and payment info. Booking statuses: Unconfirmed, Checked-in, or Checked-out.Filter bookings by status.
 
-Manage guest details like name, email, national ID, and nationality.
-Dashboard
+- Check-In/Out
 
-View key stats for the last 7, 30, or 90 days.
-See daily check-ins/check-outs and recent booking stats.
-Charts for hotel sales and guest stay durations.
-Settings & Customization
+    - Check-in, check-out, or delete bookings as guests arrive.Confirm payments on check-in.Option to add breakfast for the stay.
 
-Set breakfast price, booking limits, and max guests per booking.
-Dark mode support.
+- Guests
+
+    - Manage guest details like name, email, national ID, and nationality.
+
+- Dashboard
+    - View key stats for the last 7, 30, or 90 days.See daily check-ins/check-outs and recent booking stats.Charts for hotel sales and guest stay durations.
+
+- Settings & Customization
+    - Set breakfast price, booking limits, and max guests per booking.
+
+- Dark mode support.
+
 
 #### Login Page :
 
